@@ -1,13 +1,12 @@
 vim.pack.add({
-	{ src = "https://github.com/nvim-mini/mini.pick", version = "stable" },
-	{ src = "https://github.com/nvim-mini/mini.tabline", version = "stable" },
-	{ src = "https://github.com/nvim-mini/mini.pairs", version = "stable" },
+	{ src = "https://github.com/windwp/nvim-autopairs" },
+
+	{ src = "https://github.com/ibhagwan/fzf-lua" },
 
 	{ src = "https://github.com/stevearc/oil.nvim" },
 
 	{ src = "https://github.com/kylechui/nvim-surround", version = vim.version.range("4.x") },
 
-	{ src = "https://github.com/zenbones-theme/zenbones.nvim" },
 	{ src = "https://github.com/rktjmp/lush.nvim" },
 
 	{ src = "https://github.com/saghen/blink.cmp", version = vim.version.range("1.*") },
@@ -16,9 +15,7 @@ vim.pack.add({
 	{ src = "https://github.com/williamboman/mason-lspconfig.nvim" },
 })
 
-require("mini.pick").setup()
-require("mini.tabline").setup()
-require("mini.pairs").setup()
+require("nvim-autopairs").setup()
 
 require("oil").setup()
 

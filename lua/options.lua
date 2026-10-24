@@ -20,5 +20,3 @@ o.foldlevelstart = 99
 
 o.viewoptions = "cursor,folds,slash,unix"
 o.termguicolors = true
-
-vim.cmd.colorscheme("zenbones")
