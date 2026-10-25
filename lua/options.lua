@@ -1,4 +1,4 @@
-local o = vim.o
+local o = vim.opt
 
 o.number = true
 o.relativenumber = true
@@ -12,11 +12,8 @@ o.wrap = false
 o.clipboard = "unnamedplus"
 
 o.foldenable = true
-o.foldmethod = 'expr'
-o.foldexpr = 'v:lua.vim.lsp.foldexpr()'
 o.foldcolumn = '1'
 o.foldlevel = 99
 o.foldlevelstart = 99
 
-o.viewoptions = "cursor,folds,slash,unix"
 o.termguicolors = true

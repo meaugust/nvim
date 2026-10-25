@@ -1,3 +1,5 @@
+vim.opt.viewoptions = "cursor,folds,slash,unix,options"
+
 local view_group = vim.api.nvim_create_augroup("AutoView", { clear = true })
 
 vim.api.nvim_create_autocmd({ "BufWinLeave", "BufWritePost" }, {

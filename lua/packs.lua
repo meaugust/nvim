@@ -1,4 +1,7 @@
 vim.pack.add({
+	{ src = "https://github.com/kevinhwang91/promise-async" },
+	{ src = "https://github.com/kevinhwang91/nvim-ufo" },
+
 	{ src = "https://github.com/windwp/nvim-autopairs" },
 
 	{ src = "https://github.com/ibhagwan/fzf-lua" },
@@ -14,6 +17,13 @@ vim.pack.add({
 	{ src = "https://github.com/neovim/nvim-lspconfig" },
 	{ src = "https://github.com/williamboman/mason-lspconfig.nvim" },
 })
+
+require("ufo").setup({
+    provider_selector = function(bufnr, filetype, buftype)
+        return { "lsp", "indent" }
+    end
+})
+
 
 require("nvim-autopairs").setup()
 
